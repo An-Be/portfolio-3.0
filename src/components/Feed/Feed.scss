@@ -1,0 +1,72 @@
+.Feed {
+    border: 1px solid rgb(226, 226, 226);
+    height: 100vh;
+  &__banner {
+    background-color: #0066ff;
+    width: 598px;
+    height: 150px;
+  }
+  &__profileImage {
+    position: relative;
+    img {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 20px;
+      bottom: -40px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+  }
+  &__profileInfo {
+    margin: 3rem 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    #name {
+      font-size: 34px;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+    }
+    #userName {
+      font-size: 15px;
+      letter-spacing: 0.25px;
+      font-weight: 400;
+      color: rgb(84, 86, 100);
+      font-style: italic;
+    }
+    #stats {
+      display: flex;
+      .profile_stats {
+        padding: 0 10px 0 0;
+        .statAmount {
+          font-size: 15px;
+          letter-spacing: 0.25px;
+          font-weight: 600;
+          padding-right: 3px;
+        }
+        .statName {
+          font-size: 15px;
+          letter-spacing: 0.25px;
+          font-weight: 400;
+          color: rgb(84, 86, 100);
+        }
+      }
+    }
+    #summary {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+  &__sections{
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: flex;
+    >div{
+        padding-right: 1rem;
+    }
+  }
+}

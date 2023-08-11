@@ -1,13 +1,13 @@
 import { useState } from 'react'
+import Feed from './components/Feed/Feed'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <div className='App'>
+      <Feed />
+      </div>
   )
 }
 
