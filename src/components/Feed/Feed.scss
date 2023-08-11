@@ -19,11 +19,14 @@
     }
   }
   &__profileInfo {
-    margin: 3rem 0 0 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    #name, #userName, #stats, #summary{
+        margin: 0 0 0 20px;
+    }
     #name {
+        margin-top: 3rem;
       font-size: 34px;
       letter-spacing: 0.25px;
       font-weight: 500;
@@ -65,8 +68,15 @@
     font-weight: 600;
     margin-top: 1rem;
     display: flex;
-    >div{
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding-bottom: 15px;
+    #Posts, #Projects, #About, #Contact{
         padding-right: 1rem;
+        margin: 0 0 0 20px;
+
+        :hover{
+            cursor: pointer;
+        }
     }
   }
 }

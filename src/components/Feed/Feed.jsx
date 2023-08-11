@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, Suspense } from "react";
 import "./Feed.scss";
+import PostsOutline from "./PostsOutline/PostsOutline";
 import {
   IMAGE,
   NAME,
@@ -7,9 +8,11 @@ import {
   PROFILE_STATS,
   SUMMARY,
   FEED_SECTIONS,
-} from "../utils/feedContansts";
+} from "../utils/feedConstants";
 
 const Feed = () => {
+  const [feedToShow, setFeedToShow] = useState("Posts");
+  console.log(feedToShow)
   return (
     <div className="Feed">
       <div className="Feed__banner" />
@@ -29,10 +32,23 @@ const Feed = () => {
         </div>
         <span id="summary">{SUMMARY}</span>
         <div className="Feed__sections">
-          {FEED_SECTIONS.map((sections, index) => (
-            <div key={index}>{sections}</div>
+          {FEED_SECTIONS.map((section, index) => (
+            <div
+              key={index}
+              id={section}
+              onClick={() => setFeedToShow(section)}
+            >
+              <div>{section}</div>
+            </div>
           ))}
         </div>
+          <PostsOutline
+            theme={feedToShow}
+            photo={IMAGE}
+            name={NAME}
+            username={USER_NAME}
+            timestamp={"1hr"}
+          />
       </div>
     </div>
   );
