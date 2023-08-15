@@ -1,7 +1,7 @@
 .Outline {
-    padding: 15px;
-    width: 570px;
-    border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 15px;
+  width: 570px;
+  border-bottom: 1px solid rgb(226, 226, 226);
 
   &__wrapper {
     display: flex;
@@ -12,9 +12,9 @@
         height: 52px;
       }
     }
-    &__inner{
-        padding-top: 3px;
-        margin: 5px;
+    &__inner {
+      padding-top: 3px;
+      margin: 5px;
     }
     &__name {
       font-size: 16px;
@@ -26,18 +26,38 @@
       font-weight: 400;
       color: rgb(84, 86, 100);
       font-style: italic;
+      margin-left: 7px;
     }
-    .displayItems{
-        padding-top: 2px;
-
-        &__item{
-            font-size: 16px;
-            letter-spacing: 0.2px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            line-height: 20.8px;
-        }
+    &__tag {
+      padding: 10px 0 10px 0;
+      width: 100px;
+      border-radius: 1rem;
+      color: #fff;
+      text-align: center;
+      font-style: italic;
     }
+    &__header {
+      color: rgb(105, 105, 105);
+    }
+    &__item {
+      margin: 5px 0 5px 0;
+      letter-spacing: 0.25px;
+    }
+    &__project_image {
+      width: 500px;
+    }
+    .displayItems {
+      padding-top: 2px;
+      display: flex;
+      flex-direction: column;
 
+      &__item {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        line-height: 20.8px;
+      }
+    }
   }
 }

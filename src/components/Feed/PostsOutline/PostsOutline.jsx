@@ -7,7 +7,6 @@ const PostsOutline = ({
   name,
   username,
   timestamp,
-  displayItems,
 }) => {
   const TimelineComponent = UsePostsOutlineDisplay({
     theme,
@@ -15,9 +14,7 @@ const PostsOutline = ({
     name,
     username,
     timestamp,
-    //displayItems
 });
-  console.log(photo, TimelineComponent);
   return (
       <Suspense fallback="Loading...">{TimelineComponent}</Suspense>
   );

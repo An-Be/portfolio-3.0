@@ -1,9 +1,9 @@
 import React from "react";
 import Outline from "../Outline/Outline";
 import './Post.scss';
-import { feedProptypes, POST_DISPLAY_ITEMS } from "../../utils/feedConstants";
+import { feedProptypes } from "../../utils/feedConstants";
 
-const Post = ({ photo, name, username, timestamp }) => {
+const Post = ({ photo, name, username, timestamp, displayItems }) => {
   return (
     <div className="Post">
           <Outline
@@ -11,7 +11,7 @@ const Post = ({ photo, name, username, timestamp }) => {
             name={name}
             username={username}
             timestamp={timestamp}
-            displayItems={POST_DISPLAY_ITEMS}
+            displayItems={displayItems}
           />
     </div>
   );

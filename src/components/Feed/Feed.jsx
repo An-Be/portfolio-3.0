@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react";
+import React, { useState } from "react";
 import "./Feed.scss";
 import PostsOutline from "./PostsOutline/PostsOutline";
 import {
@@ -47,7 +47,6 @@ const Feed = () => {
             photo={IMAGE}
             name={NAME}
             username={USER_NAME}
-            timestamp={"1hr"}
           />
       </div>
     </div>
