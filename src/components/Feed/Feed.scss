@@ -80,8 +80,11 @@
     width: 100%;
     #Posts, #Projects, #About, #Contact{
         padding-right: 1rem;
-        margin: 0 0 0 20px;
-
+        margin: 0 0 0 15px;
+        button{
+          background-color: #fff;
+          border: none;
+        }
         :hover{
             cursor: pointer;
         }

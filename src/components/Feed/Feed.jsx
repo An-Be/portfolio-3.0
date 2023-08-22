@@ -37,7 +37,7 @@ const Feed = () => {
               id={section}
               onClick={() => setFeedToShow(section)}
             >
-              <div>{section}</div>
+              <button>{section}</button>
             </div>
           ))}
         </div>
