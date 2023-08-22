@@ -1,6 +1,6 @@
 .Outline {
   width: 95%;
-    padding: 15px;
+  padding: 15px;
   border-bottom: 1px solid rgb(226, 226, 226);
   @media (max-width: 620px) {
     width: auto;
@@ -18,23 +18,37 @@
     &__inner {
       padding-top: 3px;
       margin: 5px;
+      @media (max-width: 600px) {
+        .user_info {
+          max-width: 300px;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
       @media (max-width: 400px) {
-        &__name,&__userName,&__timeStamp{
-          word-break: break-all;
+        .user_info {
+          max-width: 150px;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        }
-        &__name {
-          font-size: 16px;
-          font-weight: 700;
-        }
-        &__userName,
-        &__timeStamp {
-          font-size: 15px;
-          font-weight: 400;
-          color: rgb(84, 86, 100);
-          font-style: italic;
-          margin-left: 7px;
-        }
+      }
+
+      &__name {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      &__userName,
+      &__timeStamp {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(84, 86, 100);
+        font-style: italic;
+        margin-left: 7px;
+      }
     }
 
     &__tag {
@@ -87,7 +101,7 @@
           display: flex;
           align-items: center;
           text-decoration: none;
-          svg{
+          svg {
             fill: #000;
           }
           svg:hover {
@@ -101,7 +115,8 @@
           color: rgb(105, 105, 105);
           padding: 5px;
           font-size: 14px;
-          &.github:hover,&.deployed:hover {
+          &.github:hover,
+          &.deployed:hover {
             color: #5fd715;
           }
         }
