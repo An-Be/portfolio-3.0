@@ -42,7 +42,7 @@ const Outline = ({ photo, name, username, displayItems }) => {
                     <a target="_blank" href={item.github["data"]}>
                       <AiFillGithub />
                       <span className="displayItems__icons__text github">
-                      Repository
+                      Repo
                     </span>
                     </a>
 
@@ -53,7 +53,7 @@ const Outline = ({ photo, name, username, displayItems }) => {
                     <a target="_blank" href={item.deployed["data"]}>
                       <GoRocket />
                       <span className="displayItems__icons__text deployed">
-                      Deployed Site
+                      Site
                     </span>
                     </a>
 
