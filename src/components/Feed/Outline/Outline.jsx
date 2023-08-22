@@ -19,9 +19,9 @@ const Outline = ({ photo, name, username, displayItems }) => {
               <img src={photo} />
             </div>
             <div className="Outline__wrapper__inner">
-              <span className="Outline__wrapper__name">{name}</span>
-              <span className="Outline__wrapper__userName">{username}</span>
-              <span className="Outline__wrapper__timeStamp">
+              <span className="Outline__wrapper__inner__name">{name}</span>
+              <span className="Outline__wrapper__inner__userName">{username}</span>
+              <span className="Outline__wrapper__inner__timeStamp">
                 {item.timeStamp}
               </span>
               <div className="displayItems">
@@ -42,7 +42,7 @@ const Outline = ({ photo, name, username, displayItems }) => {
                     <a target="_blank" href={item.github["data"]}>
                       <AiFillGithub />
                       <span className="displayItems__icons__text github">
-                      Repository
+                      Repo
                     </span>
                     </a>
 
@@ -53,7 +53,7 @@ const Outline = ({ photo, name, username, displayItems }) => {
                     <a target="_blank" href={item.deployed["data"]}>
                       <GoRocket />
                       <span className="displayItems__icons__text deployed">
-                      Deployed Site
+                      Site
                     </span>
                     </a>
 
