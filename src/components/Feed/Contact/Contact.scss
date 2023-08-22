@@ -1,0 +1,86 @@
+.Contact {
+  width: 570px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  &__form {
+    &__name,
+    &__email,
+    &__subject,
+    &__message {
+      margin: 10px;
+
+    }
+    &__message{
+        textarea{
+            font-family: inherit;
+        }
+    }
+
+    #inputName,
+    #email,
+    #subject {
+      min-width: 500px;
+      padding: 5px;
+      border-radius: 10px;
+      border: 2px solid #00b5ff;
+      &:focus{
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: 2px;
+        outline-color: #3f940a;
+      }
+    }
+    #message {
+      min-width: 500px;
+      min-height: 200px;
+      padding: 5px;
+      border-radius: 10px;
+      border: 2px solid #00b5ff;
+      &:focus{
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: 2px;
+        outline-color: #3f940a;
+      }
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        background-color: rgb(0, 157, 255);
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px 5px 10px 5px;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(30, 123, 181);
+        }
+      }
+    }
+  }
+  &__socials{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+
+    a{
+        text-decoration: none;
+        &:visited{
+            color: black;
+        }
+        svg{
+            fill:black;
+        }
+        svg:hover{
+            fill: #3f940a;
+        }
+    }
+  }
+}

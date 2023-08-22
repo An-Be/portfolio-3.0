@@ -1,0 +1,20 @@
+.About{
+    width: 570px;
+    height: 100%;
+    padding: 15px;
+    &__heading{
+        font-size: 20px;
+        &__title{
+        }
+        &__name{
+            color: rgb(255, 162, 0);
+        }
+    }
+    &__description{
+        letter-spacing: 0.25px;
+    }
+    &__img{
+        width: 570px;
+
+    }
+}

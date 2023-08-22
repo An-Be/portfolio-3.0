@@ -1,0 +1,27 @@
+.Tooltip {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  &__content {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #fff;
+    width: 115px;
+    .left {
+      left: auto;
+      top: 50%;
+      right: calc(100% - -5px);
+      transform: translateX(0) translateY(-50%);
+    }
+    .right {
+      right: auto;
+      top: 40%;
+      left: calc(100% - -5px);
+      transform: translateX(0) translateY(-50%);
+    }
+  }
+}

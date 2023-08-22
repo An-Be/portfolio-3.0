@@ -12,7 +12,6 @@ import {
 
 const Feed = () => {
   const [feedToShow, setFeedToShow] = useState("Posts");
-  console.log(feedToShow)
   return (
     <div className="Feed">
       <div className="Feed__banner" />
